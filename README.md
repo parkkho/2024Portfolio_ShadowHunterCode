@@ -31,4 +31,9 @@
 <img src="https://github.com/user-attachments/assets/8ff88eee-d458-4116-83f3-dc48b53ea96b"  width="20%" height="20%">
 <img src="https://github.com/user-attachments/assets/59db6c8d-2b1e-4e84-a0bd-ec3e9df42385"  width="20%" height="20%">
 <img src="https://github.com/user-attachments/assets/0a4fd97d-8dfc-4064-bc10-b6c92db70617"  width="20%" height="20%">
+
+### 📹 영상
+
+***
+https://youtu.be/_4WFqCPVqAw
  
