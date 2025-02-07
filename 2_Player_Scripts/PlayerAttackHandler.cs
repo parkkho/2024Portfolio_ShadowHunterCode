@@ -15,8 +15,7 @@ public class PlayerAttackHandler : AttackHandler
      private Scanner scanner;
 
     [Header("---STATUS---")]
- //   public float atkRange = 5f; // 공격사거리
-
+ 
     public float lifeStealValue; // 생명력 흡수
 
     public float baseMoveSpeed;
@@ -75,15 +74,9 @@ public class PlayerAttackHandler : AttackHandler
         float dirX = Mathf.Sign(targetTrf.position.x - rigid.position.x);
 
         player.PlayerAnimHandler.SetFlip(dirX);
-
-      //  player.dirX = dirX;
+;
     }
 
-    //public override void InitAttackHandler(AttackStatus _atkStatus , UIHandler _uiHandler)
-    //{
-      
-    //    base.InitAttackHandler(_atkStatus , _uiHandler);
-    //}
 
     // 초기화
     public override void ResetAttackHandler()
@@ -141,11 +134,7 @@ public class PlayerAttackHandler : AttackHandler
 
     public override void StartAttack()
     {
-        //if (player.isHide && player.isTransform)
-        //{
-        //    // StartCoroutine(ShowCharacter());
-        //}
-
+       
         if (IdleGameManager.Instance.gameMode == IdleGameManager.GameMode.PVP)
         {
             startAttackCoro = PvPNormalAttackCoro();
@@ -184,9 +173,6 @@ public class PlayerAttackHandler : AttackHandler
     {
         Player target = Target.transform.parent.GetComponent<Player>();
 
-     //   float angle = Utils.GetAngle3D(transform.position, target.transform.position);
-
-        // Debug.Log("angle" + angle);
         while (true)
         {
             

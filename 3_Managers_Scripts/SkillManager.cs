@@ -132,8 +132,6 @@ public class SkillManager : MonoBehaviour // 플레이어 스킬 관리
             curTrfSkillDeckID[i] = int.Parse(trfSkillIDs[i]);        
         }
 
-    //    playerSkillHandler.InitSKillHandler(curTrfSkillDeckID.Length);
-
 
         for (int i = 0; i < curTrfSkillDeckID.Length; i++)
         {

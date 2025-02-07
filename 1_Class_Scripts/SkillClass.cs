@@ -285,9 +285,6 @@ public abstract class SkillHandler : MonoBehaviour
     {
         if (id <= 0) return null;
 
-        // 유저 스킬 데이터
-      //  EquipItemData userSkillData = BackendManager.Instance.GameData.UserSkillData.GetSkillData(id);
-
         int skillOrder = id;
 
         if (id > 100) skillOrder = id % 100;
@@ -297,15 +294,6 @@ public abstract class SkillHandler : MonoBehaviour
         ActiveSkill skill = skillObj.GetComponent<ActiveSkill>();
 
         InitActiveSkill(skill, id, level);
-
-        //skill.InitActiveSkill(this, DataManager.Instance.GetSkillData(id).DeepCopy(), userSkillData.level);
-
-        //if (skill.skillData.insType != 1)
-        //{
-        //    skillObj.transform.SetParent(SkillManager.Instance.transform);
-        //}
-
-        //skillObj.transform.localPosition = Vector3.zero;
 
         return skill;
 

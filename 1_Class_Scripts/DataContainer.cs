@@ -54,8 +54,7 @@ public class StageData
 }
 
 
-//public enum StatusType { Atk, Hp, Def, Cri, CriDamage, LifeSteal, AtkIncrese, HpIncrease };
-
+// 게임 내 필요한 상수 데이터
 public class CONSTANTS
 {
     public enum StatusType { Atk, Hp, Def, Cri, CriDamage, LifeSteal , AtkIncrese , HpIncrease };
@@ -93,8 +92,6 @@ public class CONSTANTS
     public static readonly string[] GradeName = new string[] { "NORMAL", "RARE", "EPIC", "UNIQUE", "LEGENDARY", "MYTHIC" };
     public static readonly string[] GradeKorName = new string[] { "일반", "레어", "에픽", "유니크", "전설", "신화" };
 
-
-    //public static int 
 }
 
 [Serializable]

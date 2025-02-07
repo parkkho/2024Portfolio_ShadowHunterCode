@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEditor;
-using static Cinemachine.DocumentationSortingAttribute;
-using Unity.VisualScripting;
+
 
 class GrowthValue
 {
@@ -19,20 +18,8 @@ class GrowthValue
 
     public const float LifeStealGrowthValue = 0.1f;
 
-    // 비용 이전 비용 n% 씩 증가 초기비용 구분
-
-    //public const float BaseAtkPrice = 100;
-    //public const float BaseHpPrice = 100;
-    //public const float BaseDefPrice = 100;
-
     public const float BaseGrowthValue_1 = 100;
     public const float BaseGrowthValue_2 = 500;
-
-   // public const float BaseCriPrice = 200;
-
-   // public const float BaseCriDamagePrice = 500;
-
-   // public const float BaseLifeStealGrowthPrice = 500;
 
     public const float PriceIncrease = 1.01f; // 비용 증가량 1%;
 
@@ -51,7 +38,6 @@ public class PlayerGrowth : MonoBehaviour // 플레이어 능력치 성장 관�
 
     Player player;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = IdleGameManager.Instance.player;
@@ -207,8 +193,6 @@ public class PlayerGrowth : MonoBehaviour // 플레이어 능력치 성장 관�
 
                     player.playerUIHandler.SetHpMaxValue(player.playerAtkHandler.atkStatus.maxHp);
                 }
-             
-               // player.playerAtkHandler.RecoverHp(hpPoint);
 
                 break;
 

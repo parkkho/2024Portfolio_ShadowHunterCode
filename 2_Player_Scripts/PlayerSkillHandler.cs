@@ -29,20 +29,6 @@ public class PlayerSkillHandler : SkillHandler
         animHandler = _playerAnimator;
     }
 
-    //public void InitTransformSkillHandler(int skillCount)
-    //{
-
-    //}
-
-    //// 변신 스킬 로드
-    //public void LoadTransformSkillData(int[] skillIDs , int trfCharacID , int level)
-    //{
-     
-    //    for (int i = 0; i < skillIDs.Length; i++)
-    //    {
-    //        SetEquipTransformSkill(i, skillIDs[i] , trfCharacID, level);
-    //    }
-    //}
 
     // 장착 변신스킬 세팅
     public void SetEquipTransformSkill(int order ,int id , int trfCharacID , int level)

@@ -10,8 +10,7 @@ public class PlayerUIHandler : UIHandler
     // 플레이어 관련 UI
     [Header("Player_UI")]
 
-    public Sprite[] trfFillSprite; // 변신게이지 스프라이트
-  //  public Slider hpSlider;
+    public Sprite[] trfFillSprite; // 변신게이지 스프라이트 
     public Image transformEnergyImg; // 변신게이지 이미지
     public Image trfFadePanel; // 변신 시 페이드 이미지
     public Button trfButton; // 변신 버튼

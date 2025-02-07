@@ -6,6 +6,8 @@ using TMPro;
 using UnityEngine.UI;
 using JHSOFT_BALANCE;
 using Cinemachine;
+//using UnityEngine.Rendering.Universal;
+//using UnityEngine.Rendering;
 using System;
 
 public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 관리
@@ -37,8 +39,7 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
 
     public bool isBossStage = false; // 보스 스테이지 인지
 
-    // List<GameObject> bloodPool = new List<GameObject>();
-
+   
 
     /// <summary>
     /// 유저 데이터
@@ -334,7 +335,9 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
     // 죽고 다시 시작  or 반복 전투 => 자동도전으로 모드 변경 시
     public void RestartGame()
     {
-      
+        // 화면 페이드
+        // UIManager.Instance.OpenFadePanel(1.5f);
+
         // 유저 초기화
         ResetGame();
 
@@ -520,6 +523,8 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
         StartCoroutine(GameOverCoro());
     }
 
+
+
     public IEnumerator MoveEarnItem(GameObject itemObj)
     {
         yield return YieldCache.WaitForSeconds(0.5f);
@@ -597,6 +602,8 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
 
             userExpSlider.maxValue = maxExp;
 
+            //BackendManager.Instance.GameData.UserData.LevelUpdate(level);
+            //UIManager.Instance.userLevelTMP.text = string.Format("LV.{0}", level);
         }
 
         userExpSlider.value = userExp;
@@ -788,6 +795,8 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
         PlayEarnEffect(2001, sPos, UIManager.Instance.userLevelTMP.transform.position, earnEffParent);
         PlayEarnEffect(2002, sPos, UIManager.Instance.userLevelTMP.transform.position, earnEffParent);
     }
+
+  
 
     // 다른게임모드로 바꾸기
     public void ChangeGameMode(GameMode _gameMode)
