@@ -227,7 +227,6 @@ public class SkillManager : MonoBehaviour // 플레이어 스킬 관리
         // 로비 스킬세팅
         SetSkillButton(id, order, isTransform);
 
-
     }
 
 
@@ -345,9 +344,7 @@ public class SkillManager : MonoBehaviour // 플레이어 스킬 관리
         {
             skillBtn.ChangeState(SkillButton.State.CoolTime);
             WaitUseSkill(1f + skill.skillData.useTime);
-         //   IdleGameManager.Instance.player.ChangeState(Player.PlayerAttackState.Delay);
-
-           // return true;
+       
         }
 
         return isUse;
