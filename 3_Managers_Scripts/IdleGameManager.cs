@@ -37,9 +37,6 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
 
     public bool isBossStage = false; // 보스 스테이지 인지
 
-    // List<GameObject> bloodPool = new List<GameObject>();
-
-
     /// <summary>
     /// 유저 데이터
     /// </summary>
@@ -541,12 +538,8 @@ public class IdleGameManager : MonoBehaviour // 방치형 게임 전체적인 �
             yield return null;
         }
 
-       // player.MonsterLifeSteal(hp);
-       // player.EarnTransformEnergy(0.01f);
-
         itemObj.SetActive(false);
-      //  bloodPool.Add(itemObj);
-
+     
     }
 
 
